@@ -8,10 +8,10 @@ You can add any of these skills to your project using the `skills` CLI (part of 
 
 ```bash
 # List all available skills in this repository
-npx -y skills add pm-minji/my-agent-skills --list
+npx -y skills add pm-minji/agent-skills --list
 
 # Install a specific skill
-npx -y skills add pm-minji/my-agent-skills --skill kaizen
+npx -y skills add pm-minji/agent-skills --skill kaizen
 ```
 
 ## Available Skills
