@@ -1,41 +1,48 @@
-# My Agent Skills
+# 에이전트 스킬 모음 (Agent Skills)
 
-A collection of high-quality instructions and workflows for AI agents (Antigravity, Cursor, Claude Code, etc.). These skills are optimized for web development, design systems (Stitch), database management, and security.
+AI 에이전트(Antigravity, Cursor, Claude Code 등)를 위한 고품질 인스트럭션 및 워크플로우 모음입니다. 웹 개발, 디자인 시스템(Stitch), 데이터베이스 최적화, 보안 점검에 최적화되어 있습니다.
 
-## Installation
+## 📥 설치 및 사용 방법
 
-You can add any of these skills to your project using the `skills` CLI (part of the [Agent Skills](https://github.com/google-labs-code/agent-skills) standard).
+본 저장소의 스킬들은 [Agent Skills](https://github.com/google-labs-code/agent-skills) 표준을 따르며, `skills` CLI를 통해 간단히 설치할 수 있습니다.
 
+### 1. 사용 가능한 스킬 목록 확인
+프로젝트 터미널에서 아래 명령어를 실행하세요:
 ```bash
-# List all available skills in this repository
 npx -y skills add pm-minji/agent-skills --list
+```
 
-# Install a specific skill
+### 2. 특정 스킬 설치
+원하는 스킬의 이름을 지정하여 설치할 수 있습니다. 예를 들어, 리팩토링 스킬(`kaizen`)을 현재 프로젝트에 추가하려면:
+```bash
 npx -y skills add pm-minji/agent-skills --skill kaizen
 ```
 
-## Available Skills
-
-### 🎨 Design & UI
-- **design-md**: Analyze Stitch projects and synthesize semantic design systems.
-- **enhance-prompt**: Transform vague UI ideas into polished, Stitch-optimized prompts.
-- **frontend-design**: Expert guidance for modern, premium web interfaces.
-- **tailwind-patterns**: Best practices for scalable Tailwind CSS.
-
-### 🏗️ Engineering & Quality
-- **kaizen**: Continuous improvement, refactoring, and error-proofing (Poka-Yoke).
-- **lint-and-validate**: Automated quality control and static analysis.
-- **spec-generator**: Generate comprehensive technical specifications.
-- **react-best-practices**: Modern React patterns and performance tips.
-
-### 🔐 Security & Backend
-- **supabase-postgres-best-practices**: Optimization and security for Supabase/PostgreSQL.
-- **top-web-vulnerabilities**: Security audit patterns for OWASP Top 10.
-- **ethical-hacking-methodology**: Structured security testing workflows.
-
-### 📈 Marketing & SEO
-- **seo-audit**: Optimize your web application for search engines.
-- **content-creator**: Assist in creating high-quality marketing content.
+*팁: 특정 프로젝트가 아닌 모든 곳에서 사용하려면 명령어 뒤에 `--global`을 붙이세요.*
 
 ---
-Built for the AI-first development era.
+
+## 🛠 주요 스킬 목록
+
+### 🎨 디자인 및 UI (Design & UI)
+- **design-md**: 스티치(Stitch) 프로젝트를 분석하여 의미론적 디자인 시스템 문서 생성.
+- **enhance-prompt**: 모호한 UI 아이디어를 정교하고 최적화된 프롬프트로 변환.
+- **frontend-design**: 프리미엄 수준의 현대적 웹 인터페이스 구현 가이드.
+
+### 🏗 엔지니어링 및 품질 (Engineering & Quality)
+- **kaizen**: 지속적인 개선, 리팩토링 및 실수 방지(Poka-Yoke) 기법 적용.
+- **lint-and-validate**: 자동 품질 제어 및 정적 코드 분석 실행.
+- **spec-generator**: 포괄적이고 상세한 기술 사양서(Specification) 생성.
+- **react-best-practices**: 최신 리액트 패턴 및 성능 최적화 팁.
+
+### 🔐 보안 및 백엔드 (Security & Backend)
+- **supabase-postgres-best-practices**: Supabase/PostgreSQL 최적화 및 보안 가이드.
+- **top-web-vulnerabilities**: OWASP Top 10 기반 보안 취약점 점검.
+
+### 📈 마케팅 및 SEO
+- **seo-audit**: 웹 애플리케이션 검색 엔진 최적화(SEO) 점검.
+- **content-creator**: 고품질 마케팅 및 기술 콘텐츠 제작 지원.
+
+---
+AI 협업 시대에 맞춘 최적의 개발 워크플로우를 제공합니다.
+
